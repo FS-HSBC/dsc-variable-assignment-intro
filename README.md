@@ -3,13 +3,9 @@
 
 ## Introduction
 
-> "There are only two hard things in Computer Science: cache invalidation and naming things."
+> "There are only two hard things in Computer Science: cache invalidation and naming things." -- Phil Karlton
 
-> -- Phil Karlton
-
-> "...But ordinary language is all right." 
-
-> -- Ludwig Wittgenstein
+> "...But ordinary language is all right."  -- Ludwig Wittgenstein
 
 ## Objectives
 You will be able to:
