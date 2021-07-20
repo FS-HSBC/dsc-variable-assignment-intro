@@ -25,13 +25,6 @@ In this lesson, we'll learn how to use variables to assign names to data.  For e
 "Art Vandelay"
 ```
 
-
-
-
-    'Art Vandelay'
-
-
-
 Now months later, if we see that string in some code, we may be confused as to what it is, and with even more data, this only becomes more difficult.
 
 So, let's use variables to indicate what each of the following strings mean.
@@ -45,7 +38,7 @@ email = "art.vandelay@vandelay.com"
 
 In programming terms, we say that we just declared a variable, `email`, and assigned it to the string, `"art.vandelay@vandelay.com"`.  To do so, we'll follow the procedure below:
 
-    variable = data
+`variable = data`
 
 Now that we have assigned a variable `email` to a string, we just type the word `email` to see the string again. 
 
@@ -54,11 +47,7 @@ Now that we have assigned a variable `email` to a string, we just type the word 
 email
 ```
 
-
-
-
-    'art.vandelay@vandelay.com'
-
+`'art.vandelay@vandelay.com'`
 
 
 > *remember to press shift + enter on the gray box above to see the value of our variable, *`email`*.*
@@ -71,13 +60,6 @@ website = "vandelay.com"
 website
 ```
 
-
-
-
-    'vandelay.com'
-
-
-
 Note that if you introduce a new variable, (declare it), but do not also assign it in the same line, Python will raise an error.
 
 
@@ -85,7 +67,7 @@ Note that if you introduce a new variable, (declare it), but do not also assign 
 full_name
 ```
 
-
+```
     ---------------------------------------------------------------------------
 
     NameError                                 Traceback (most recent call last)
@@ -95,7 +77,7 @@ full_name
     
 
     NameError: name 'full_name' is not defined
-
+```
 
 That error tells us that `full_name` is not defined.  We just fix this by declaring `full_name`, storing data inside that variable and returning that variable in the same line.
 
@@ -106,24 +88,12 @@ full_name
 ```
 
 
-
-
-    'Art Vandelay'
-
-
-
 So this is assigning and reading a variable.  And when we want to see some information again, we can easily find out.
 
 
 ```python
 email
 ```
-
-
-
-
-    'art.vandelay@vandelay.com'
-
 
 
 ## Declaring variables without assignment
@@ -134,12 +104,6 @@ We have seen that we can have data without assigning it to variables.
 ```python
 "Unassigned data"
 ```
-
-
-
-
-    'Unassigned data'
-
 
 
 Sometimes we wish to declare a variable without assigning it to data.  In Python, that's a little tricky to do.  As we just saw with `name`, declaring variables without assignment throws an error.  Thankfully, Python has a special type for us that represents nothing at all.
@@ -153,12 +117,6 @@ None
 ```python
 type(None)
 ```
-
-
-
-
-    NoneType
-
 
 
 None is a data type in Python that represents nothing.  So, if we do not know the type of a variable and want to have the data to the variable be assigned later, we can assign that variable to `None`.
@@ -186,26 +144,12 @@ Now that we have this data, we can imagine using it for some kind of instruction
 "Send an email to Art Vandelay at 'art.vandelay@vandelay.com' to say how nice it was meeting yesterday."
 ```
 
-
-
-
-    "Send an email to Art Vandelay at 'art.vandelay@vandelay.com' to say how nice it was meeting yesterday."
-
-
-
 If we construct this message with variables, we can write the following:
 
 
 ```python
 "Send an email to " + full_name + " at " + email +  " to say how nice it was meeting yesterday."
 ```
-
-
-
-
-    'Send an email to Art Vandelay at art.vandelay@vandelay.com to say how nice it was meeting yesterday.'
-
-
 
 Now you meet someone else, "Liz Kaplan" with the email of "liz@ka-plan.com" and want to write a memo with the same instructions. Only two things vary in the memo: name and email. This should be easy enough given the way we set up our code above. First we need to change the variables, `full_name` and `email`, by setting them to our new data.
 
@@ -223,23 +167,9 @@ full_name # 'Liz Kaplan'
 ```
 
 
-
-
-    'Liz Kaplan'
-
-
-
-
 ```python
 email # 'liz@ka-plan.com'
 ```
-
-
-
-
-    'liz@ka-plan.com'
-
-
 
 Now, if we copy and re-run our previous code, we will see it is automatically updated.
 
@@ -247,12 +177,6 @@ Now, if we copy and re-run our previous code, we will see it is automatically up
 ```python
 "Send an email to " + full_name + " at " + email +  " to say how nice it was meeting yesterday."
 ```
-
-
-
-
-    'Send an email to Liz Kaplan at liz@ka-plan.com to say how nice it was meeting yesterday.'
-
 
 
 In the line above, we are getting to some of the real power of programming. By choosing the correct variable name, we can begin to change the values of `full_name` or `email` and operate on their underlying values in the same ways.
