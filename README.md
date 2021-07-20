@@ -55,7 +55,7 @@ email
 `'art.vandelay@vandelay.com'`
 
 > - remember to press shift + enter on the gray box above to see
-> the value of our variable, *`email`*.*
+> the value of our variable, *`email`*.
 
 Now let's try this with the website:
 
